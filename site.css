@@ -119,7 +119,7 @@ footer {
 }
 
 /* STEPS */
-#step1 body, #step2 body, #step3 body, #step4 body {
+#step1 body, #step2 body, #step3 body, #step4 body, #completion body {
     background: url(images/background.png) no-repeat;
     background-size: cover;
 }
@@ -226,6 +226,21 @@ input[type="radio" i] {
     color: green;
 }
 
+.round-ctas {
+    display: flex;
+    margin: 55px 0 16vh;
+}
+
+.round-ctas img {
+    width: 47.43px;
+    margin: 0 11px;
+    cursor: pointer;
+}
+
+.linkedin-round {
+    margin-left: 25px !important;
+}
+
 .progress-bar, .progress-bar--0 {
     width: 80%;
     height: 40px;
@@ -260,4 +275,12 @@ input[type="radio" i] {
     background: -webkit-linear-gradient(90deg, rgba(13,172,0,1) 74%, rgba(255,255,255,1) 75%);
     background: linear-gradient(90deg, rgba(13,172,0,1) 74%, rgba(255,255,255,1) 75%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0dac00",endColorstr="#ffffff",GradientType=1);
+}
+
+.progress-bar--100 {
+    background-color: #0dac00;
+}
+
+#completion .progress-bar, #completion  .progress-bar--0 {
+    margin: 50vh auto 30px;
 }
