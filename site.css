@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+body {
+    margin: 0;
+    color: #181818;
+    background-color: #f6f7f9;
+    font-family:  sans-serif, Arial, Helvetica;
+}
+
+header {
+    width: 100%;
+    background-color: #FFF;
+    box-shadow: inset 0px -2px 7px #00000015;
+}
+
+.name-title, .navigation {
+    display: inline-block;
+}
+
+.navigation {
+    margin: 20px 0 0 39vw;
+    position: absolute; 
+}
+
+.navigation a {
+    padding: 0 15px;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+}
+
+header h1 {
+    margin: 10px 0 3px 8vw;
+    font-size: 20px;
+}
+
+header h2 {
+    margin: 0 0 10px 8vw;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+
+
+h1 {
+    margin-top: 10vh;
+}
+
+p {
+    margin: 45px 0;
+}
+
+.btn-primary {
+    background-color: #0c93f7;
+    border: none;
+    padding: 16px;
+    border-radius: 10px;
+    color: #FFF;
+    font-weight: 600;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    display: block;
+    margin: 0 auto;
+    font-family:  sans-serif;
+}
+
+.btn-primary:hover {
+    background-color: #0862A6;
+    transition: all 0.8s;
+} 
+
+.hero {
+    width: 30vw;
+    margin: 50px auto;
+    line-height: 200%;
+    font-size: 18px;
+}
+
+.preview {
+    width: 45vw;
+    display: block;
+    margin: 0 auto;
+}
