@@ -101,7 +101,16 @@ p {
 }
 
 @media (max-width:1300px) {.hero {min-width: 50vw;}}
-@media (max-width:600px) {.hero {    min-width: 80vw; font-size: 16px;}}
+@media (max-width:600px) {.hero {min-width: 80vw; font-size: 16px;}}
+
+.bullet-points {
+    line-height: 250%;
+    font-weight: bold;
+    margin: 50px auto;
+    max-width: 250px;
+}
+
+ul {list-style-type: none;}
 
 .preview {
     width: 45vw;
