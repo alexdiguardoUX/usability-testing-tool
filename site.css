@@ -40,8 +40,6 @@ header h2 {
     font-size: 15px;
 }
 
-
-
 h1 {
     margin-top: 10vh;
 }
@@ -53,15 +51,16 @@ p {
 .btn-primary {
     background-color: #0c93f7;
     border: none;
-    padding: 16px;
-    border-radius: 10px;
+    padding: 12px 40px;
+    border-radius: 20px;
     color: #FFF;
     font-weight: 600;
     cursor: pointer;
     transition-duration: 0.4s;
     display: block;
-    margin: 0 auto 80px;
+    margin: 0 auto;
     font-family:  sans-serif;
+    font-size: 16px;
 }
 
 .btn-primary:hover {
@@ -79,7 +78,8 @@ p {
 .preview {
     width: 45vw;
     display: block;
-    margin: 0 auto;
+    margin: 70px auto;
+    border-radius: 10px;
 }
 
 /* STEP 1 */
@@ -88,3 +88,43 @@ p {
     background-size: cover;
 }
 
+
+.dialog-box {
+    padding: 100px;
+}
+
+.dialog-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 15px;
+    border: 1px solid #888;
+    max-width: 650px;
+    box-shadow: 0 0 20px 3px #ffffff8c;
+    border-radius: 10px;
+}
+
+.dialog-content p {
+    margin: 16px 4vw;
+    line-height: 250%;
+}
+
+.step1-img {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.progress-bar-0 {
+    width: 80%;
+    height: 40px;
+    background-color: #FFF;
+    border-radius: 20px;
+    margin: 80px auto 30px;
+    text-align: center;
+}
+
+.progress-bar-text {
+    display: block;
+    padding: 10px;
+    font-style: italic;
+}
