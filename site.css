@@ -350,3 +350,5 @@ div.clickEffect{
     border-style: solid;
     border-color: #FFF transparent transparent transparent;
 }
+
+@media (max-width: 753px) {.click-tooltip {display: none !important;}}
