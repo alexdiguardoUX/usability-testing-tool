@@ -322,9 +322,9 @@ div.clickEffect{
     }
 }
 
-.click-tooltip {
+.click-tooltip, .wish-tooltip {
     display: none;
-    width: 135px;
+    width: 150px;
     background-color: #FFF;
     color: #000;
     text-align: center;
@@ -335,10 +335,12 @@ div.clickEffect{
     position: absolute;
     left: 50vw;
     bottom: 52vh;
-    margin-left: -67.5;
+    margin-left: -75;
     font-size: 14px;
     line-height: 150%;
 }
+
+.wish-tooltip {bottom: 56vh}
 
 .click-tooltip::after {
     content: "";

@@ -24,9 +24,18 @@
         <div class="dialog-content">
             <p><strong>Thank you for your time!</strong><br>
                 Your input will help us improve the design.<br>
-                <a href="https://alexdiguardoux.github.io/portfolio/">Back to Portfolio</a>
+                <a id="amazonLink" href="#">You unblocked an Amazon voucher!</a>
+                <span class="wish-tooltip" id="wishTooltip">You wish<span style='font-size:20px;'> &#128520;</span></span>
             </p>    
     </div>
+    <script>
+        var tooltip = document.getElementById("wishTooltip");
+        var amazonLink = document.getElementById("amazonLink");
+
+        amazonLink.addEventListener("click", function() {
+        wishTooltip.style.display = "block";
+        });
+    </script>
     <div class="progress-bar progress-bar--100">
         <span class="progress-bar-text">Completed!</span>
     </div>
