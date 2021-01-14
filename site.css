@@ -297,3 +297,56 @@ input[type="radio" i] {
 #completion .progress-bar, #completion  .progress-bar--0 {
     margin: 50vh auto 30px;
 }
+
+div.clickEffect{
+    position:fixed;
+    box-sizing:border-box;
+    border-style:solid;
+    border-color:rgb(68, 68, 68);
+    border-radius:50%;
+    animation:clickEffect 0.4s ease-out;
+    z-index:99999;
+}
+@keyframes clickEffect{
+    0%{
+        opacity:1;
+        width:0.5em; height:0.5em;
+        margin:-0.25em;
+        border-width:0.5rem;
+    }
+    100%{
+        opacity:0.2;
+        width:15em; height:15em;
+        margin:-7.5em;
+        border-width:0.03rem;
+    }
+}
+
+.click-tooltip {
+    display: none;
+    width: 135px;
+    background-color: #FFF;
+    color: #000;
+    text-align: center;
+    border-radius: 6px;
+    padding: 12px 5px;
+    transition: opacity 0.3s;
+    box-shadow: 0px 0px 14px 0px #a0a0a0;
+    position: absolute;
+    left: 50vw;
+    bottom: 52vh;
+    margin-left: -67.5;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.click-tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #FFF transparent transparent transparent;
+}

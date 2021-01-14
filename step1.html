@@ -11,13 +11,13 @@
                 a.appendChild(r);
             })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
         </script>
-        
         <link rel="stylesheet" type="text/css" href="site.css">
         <title>Usability Testing Tool</title>
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
         <meta name="Description" content="Usability Testing Tool"/>
         <meta name="keywords" content="Usability, UX design, ux research" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="scripts.js"></script>
     </head>
 
     <div class="dialog-box">
@@ -32,8 +32,16 @@
             </form>
         </div>   
     </div>
+    <span class="click-tooltip" id="clickTooltip">Thanks!<br>Please click <strong>"Next'</strong>.</span>
+    <img class="step1-img" id="step1-img" src="images/step1.png">
+    <script>
+        var tooltip = document.getElementById("clickTooltip");
+        var screenshot = document.getElementById("step1-img");
 
-    <img class="step1-img" src="images/step1.png">
+        screenshot.addEventListener("click", function() {
+        tooltip.style.display = "block";
+        });
+    </script>
     <div class="progress-bar progress-bar--0">
         <span class="progress-bar-text">Progress...</span>
     </div>
