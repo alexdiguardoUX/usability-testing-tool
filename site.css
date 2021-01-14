@@ -50,6 +50,10 @@ h1 {
     margin-top: 10vh;
 }
 
+h2 {
+    color: #163a7b;
+}
+
 @media (max-width: 370px) {h1 {font-size: 23px}}
 @media (max-width: 370px) {h2 {font-size: 18px}}
 
@@ -100,17 +104,16 @@ p {
     font-size: 18px;
 }
 
+.hero p {
+    color: #3a3a3a;
+}
+
 @media (max-width:1300px) {.hero {min-width: 50vw;}}
 @media (max-width:600px) {.hero {min-width: 80vw; font-size: 16px;}}
 
-.bullet-points {
-    line-height: 250%;
-    font-weight: bold;
-    margin: 50px auto;
-    max-width: 250px;
+.test-types {
+    margin: 40px auto 0;
 }
-
-ul {list-style-type: none;}
 
 .preview {
     width: 45vw;
