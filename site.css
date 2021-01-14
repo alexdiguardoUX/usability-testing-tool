@@ -4,7 +4,7 @@ body {
     margin: 0;
     color: #181818;
     background-color: #f6f7f9;
-    font-family:  sans-serif, Arial, Helvetica;
+    font-family:  'Open Sans', Arial, Helvetica;
 }
 
 header {
@@ -33,7 +33,7 @@ header {
     text-decoration: none;
 }
 
-@media (max-width: 1030px) {.navigation a {display: none;}}
+@media (max-width: 685px) {.navigation a {display: none;}}
 
 header h1 {
     margin: 10px 0 3px 8vw;
@@ -44,6 +44,7 @@ header h2 {
     margin: 0 0 10px 8vw;
     font-weight: 500;
     font-size: 15px;
+    color: inherit;
 }
 
 h1 {
@@ -54,14 +55,14 @@ h2 {
     color: #163a7b;
 }
 
-@media (max-width: 370px) {h1 {font-size: 23px}}
+@media (max-width: 370px) {h1:not(header h1)  {font-size: 23px}}
 @media (max-width: 370px) {h2 {font-size: 18px}}
 
 p {
     margin: 45px 0;
 }
 
-.btn-primary {
+.btn-primary, .btn-secondary {
     background-color: #0c93f7;
     border: none;
     padding: 12px 40px;
@@ -81,6 +82,12 @@ p {
     transition: all 0.8s;
 } 
 
+.btn-secondary:hover {
+    background-color: #0c93f7 !important;
+    color: #FFF !important;
+    transition: all 0.8s;
+} 
+
 @media (max-width: 700px) {.btn-primary {display: none}}
 
 .device-notice {
@@ -97,6 +104,24 @@ p {
     }
 }
 
+.ctas .btn-primary {
+    width: 180px;
+    height: 42px;
+}
+
+.ctas .btn-secondary {
+    background-color: transparent;
+    border: 2px solid #0c93f7;
+    color: #0c93f7;
+    width: 180px;
+    height: 42px;
+    padding: 0;
+}
+
+.ctas div {
+    margin: 30px;
+}
+
 .hero {
     width: 30vw;
     margin: 50px auto;
@@ -106,6 +131,7 @@ p {
 
 .hero p {
     color: #3a3a3a;
+    text-align: left;
 }
 
 @media (max-width:1300px) {.hero {min-width: 50vw;}}
@@ -124,12 +150,6 @@ p {
 }
 
 @media (max-width:1400px) {.preview {min-width: 70vw;}}
-
-footer {
-    height: 200px;
-    border-top: 1px solid #dadada;
-    background-color: #FFF;
-}
 
 /* STEPS */
 #step1 body, #step2 body, #step3 body, #step4 body, #completion body {
@@ -354,3 +374,48 @@ div.clickEffect{
 }
 
 @media (max-width: 753px) {.click-tooltip {display: none !important;}}
+
+footer {
+    border-top: 1px solid #dadada;
+    background-color: #FFF;
+}
+footer h1 {
+    margin: 35px;
+}
+
+.footer-content {
+    display: block;
+    text-align: center;
+    padding-bottom: 30px;
+}
+@media (max-width: 800px) {.footer-content {padding: 10px;}}
+
+.contact-ctas {
+    display: flex;
+}
+
+.linkedin, .email {
+    display: flex;
+    width: 120px;
+    height: 120px;
+    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    transition: all 200ms cubic-bezier(.215, .61, .355, 1);
+    border-radius: 20px;
+}
+
+.linkedin {
+    margin-right: 20px;
+}
+
+.email {
+    margin-left: 20px;
+}
+
+.footer-content p {
+    font-size: 12px;
+    width: 80%;
+    margin: 25px auto;
+}
