@@ -199,6 +199,7 @@ p {
     margin: 20px auto 30px;
     border: 1px solid #c5c5c5;
     font-family: sans-serif;
+    resize: vertical;
 }
 
 .center-box {
