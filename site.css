@@ -156,7 +156,7 @@ p {
 @media (max-width:1400px) {.preview {min-width: 70vw;}}
 
 /* STEPS */
-#step1 body, #step2 body, #step3 body, #step4 body, #completion body {
+#step1 body, #step2 body, #step3 body, #step4 body, #completion body, #intro body {
     background: url(images/background.png) no-repeat;
     background-size: cover;
 }
@@ -422,4 +422,19 @@ footer h1 {
     font-size: 12px;
     width: 80%;
     margin: 25px auto;
+}
+
+.about-you {
+    display: block;
+    margin: 0 auto 30px;
+    height: 130%;
+}
+
+.proceed-link {
+    display: none;
+    color: #FFF;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    top: 50vh;
 }

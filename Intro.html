@@ -1,0 +1,39 @@
+<html  id="intro">
+    <head>
+        <!-- Hotjar Tracking Code for https://alexdiguardoux.github.io/usability-testing-tool/ -->
+        <script>
+            (function(h,o,t,j,a,r){
+                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                h._hjSettings={hjid:2195594,hjsv:6};
+                a=o.getElementsByTagName('head')[0];
+                r=o.createElement('script');r.async=1;
+                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+        </script>
+        <link rel="stylesheet" type="text/css" href="site.css">
+        <title>Usability Testing Tool</title>
+        <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+        <meta name="Description" content="Usability Testing Tool"/>
+        <meta name="keywords" content="Usability, UX design, ux research" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body onload="setTimeout(showLink,5000);">
+        <div class="dialog-box">
+            <div class="dialog-content">
+                <p><strong>Welcome to this user testing session!</strong><br>
+                    In the next steps you'll be presented with some activities.<br>
+                    Please follow the link you'll be provided with after answering the questions below.<br>
+                </p>
+            </div>   
+        </div>
+        <a href="step1.html" class="proceed-link" id="proceed-link">Thank you! Please click here to proceed.</a>
+        <script>
+            var link = document.getElementById("proceed-link");
+            function showLink() {
+                link.style.display = "block";
+            }
+        </script>
+        <iframe class="about-you" src="https://docs.google.com/forms/d/e/1FAIpQLSelrBb2CI7YUezLqc7DkE6PHAdhrlg5ei73GSWDhBobGyOr8Q/viewform?embedded=true" width="640" height="auto" frameborder="0" marginheight="0" marginwidth="0" data-hj-allow-iframe="" scrolling="no">Loading…</iframe>
+    </body>
+</html>
