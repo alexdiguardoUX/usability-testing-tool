@@ -423,18 +423,3 @@ footer h1 {
     width: 80%;
     margin: 25px auto;
 }
-
-.about-you {
-    display: block;
-    margin: 0 auto 30px;
-    height: 130%;
-}
-
-.proceed-link {
-    display: none;
-    color: #FFF;
-    font-weight: bold;
-    text-align: center;
-    position: relative;
-    top: 50vh;
-}
