@@ -375,18 +375,9 @@ div.clickEffect{
     line-height: 150%;
 }
 
-.wish-tooltip {bottom: 56vh}
+.click-tooltip {border-left: 6px solid #0dac00}
 
-/* .click-tooltip::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #FFF transparent transparent transparent;
-} */
+.wish-tooltip {bottom: 56vh}
 
 @media (max-width: 753px) {.click-tooltip {display: none !important;}}
 
