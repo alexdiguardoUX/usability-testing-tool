@@ -34,16 +34,27 @@
     </div>
     <div class="center-box">
         <div class="versions">
-            <div class="version-a">
-                <input type="radio" id="radio-version-a" name="A" value="">
-                <img src="images/version-a.png">
+            <div class="version-a" id="version-a">
+                <a href="#"><img id="version-a-img" src="images/version-a.png"></a>
             </div>
-            <div class="version-b">
-                <input type="radio" id="radio-version-b" name="A" value="">
-                <img src="images/version-b.png">
+            <div class="version-b" id="version-b">
+                <a href="#"><img id="version-b-img" src="images/version-b.png"></a>
             </div>
         </div>
     </div>
+    <script>
+        var versionA = document.getElementById("version-a");
+        var versionAImg = document.getElementById("version-a-img");
+        versionA.addEventListener("click", function() {
+        versionAImg.style.cssText = "filter: drop-shadow(0 0 20px #FFF);";
+        });
+
+        var versionB = document.getElementById("version-b");
+        var versionBImg = document.getElementById("version-b-img");
+        versionB.addEventListener("click", function() {
+        versionBImg.style.cssText = "filter: drop-shadow(0 0 20px #FFF);";
+        });
+    </script>
     <div class="progress-bar progress-bar--50">
         <span class="progress-bar-text">Progress...</span>
     </div>
