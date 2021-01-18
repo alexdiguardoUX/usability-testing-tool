@@ -367,7 +367,7 @@ div.clickEffect{
     padding: 12px 5px;
     transition: opacity 0.3s;
     box-shadow: 0px 0px 14px 0px #a0a0a0;
-    position: fixed;
+    position: absolute;
     left: 91vw;
     bottom: 65vh;
     margin-left: -75;
@@ -375,9 +375,15 @@ div.clickEffect{
     line-height: 150%;
 }
 
-.click-tooltip {border-left: 6px solid #0dac00}
+#step1 .click-tooltip {
+    border-left: 6px solid #0dac00;
+    position: fixed;
+}
 
-.wish-tooltip {bottom: 56vh}
+.wish-tooltip {
+    bottom: 60vh;
+    left: 50vw;
+}
 
 @media (max-width: 753px) {.click-tooltip {display: none !important;}}
 
