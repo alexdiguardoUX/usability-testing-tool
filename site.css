@@ -164,13 +164,13 @@ p {
 
 
 .dialog-box {
-    padding: 100px;
+    padding: 80px;
 }
 
 .dialog-content {
     background-color: #fefefe;
     margin: auto;
-    padding: 15px;
+    padding: 10px;
     border: 1px solid #888;
     max-width: 650px;
     box-shadow: 0 0 20px 3px #ffffff8c;
@@ -179,7 +179,7 @@ p {
 
 .dialog-content p {
     margin: 16px 3vw;
-    line-height: 250%;
+    line-height: 220%;
     text-align: center;
 }
 
@@ -295,7 +295,7 @@ input[type="radio" i] {
     height: 40px;
     background-color: #FFF;
     border-radius: 20px;
-    margin: 80px auto 30px;
+    margin: 50px auto 30px;
     text-align: center;
 }
 
@@ -452,4 +452,19 @@ iframe.dark-mode {
 .fixed-box {
     position: fixed;
     padding: 10px;
+    max-width: 360px;
+}
+
+.fixed-box .dialog-content {
+    padding: 5px;
+}
+
+.fixed-box .text-box {
+    width: 270px;
+}
+
+.fixed-box p {
+    line-height: 180%;
+    text-align: left;
+    margin: 16px 40px;
 }

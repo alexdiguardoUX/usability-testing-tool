@@ -32,7 +32,17 @@
             </form>
         </div>   
     </div>
-
+    <script>
+        var sticky = document.querySelector('.dialog-box');
+        var origOffsetY = sticky.offsetTop;
+        
+        function onScroll(e) {
+          window.scrollY > origOffsetY ? sticky.classList.add('fixed-box') :
+                                          sticky.classList.remove('fixed-box');
+        }
+        
+        document.addEventListener('scroll', onScroll);
+    </script>
     <img class="img-textbox-img" src="images/step1.png">
     <div class="progress-bar progress-bar--25">
         <span class="progress-bar-text">Progress...</span>
