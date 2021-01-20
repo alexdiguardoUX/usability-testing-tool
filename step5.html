@@ -1,4 +1,4 @@
-<html id="image-prototype">
+<html id="prototype-1" class="prototype">
     <head>
         <!-- Hotjar Tracking Code for https://alexdiguardoux.github.io/usability-testing-tool/ -->
         <script>
@@ -19,16 +19,16 @@
         <meta name="Description" content="Usability Testing Tool"/>
         <meta name="keywords" content="Usability, UX design, ux research" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="scripts.js"></script>
     </head>
 
-    <div class="dialog-box">
+    <div class="dialog-box fixed-box">
         <div class="dialog-content">
-            <p><strong>Switch on the "Dark Mode".<br>What's your impression of it?</strong></p>
-                <textarea placeholder="" class="text-box fdata-hj-allow" name="text-box" rows="8" cols="60"></textarea>
-            <form action="completion.html">
-                <input class="btn-primary" type="submit" value="Submit"/>
-            </form>
+            <p><strong>Please switch on the "Dark Mode".</strong></p>
         </div>   
     </div>
-    <iframe src="day.html" data-hj-allow-iframe="" scrolling="no" style="overflow: hidden"></iframe>
+    <img class="prototype-img" src="images/day.png" usemap="#prototype">
+    <map name="prototype">
+        <area alt="" title="" href="step6.html" coords="1180,15,1218,35" shape="rect">
+    </map>
 </html>

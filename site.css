@@ -189,7 +189,7 @@ p {
 }
 
 
-.step1-img {
+.first-click-img, .img-textbox-img {
     display: block;
     margin: 0 auto;
     width: 80%;
@@ -358,7 +358,7 @@ div.clickEffect{
     }
 }
 
-#prototype-img .clickEffect {
+.prototype .clickEffect {
     border-color: red;
 }
 
@@ -380,7 +380,7 @@ div.clickEffect{
     line-height: 150%;
 }
 
-#step1 .click-tooltip {
+#first-click .click-tooltip {
     border-left: 6px solid #0dac00;
     position: fixed;
 }
@@ -437,26 +437,19 @@ footer h1 {
     margin: 25px auto;
 }
 
-.dark-mode {
+iframe.dark-mode {
     display: block;
     margin: 0 auto;
     border-radius: 20px;
 }
 
-#image-prototype iframe {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    height: 1000px;
-    border: none;
-}
-
-#prototype-img body {
-    background: none;
-}
-
-#prototype-img img {
+.prototype-img {
     border-radius: 10px;
     display: block;
     margin: 0 auto;
+}
+
+.fixed-box {
+    position: fixed;
+    padding: 10px;
 }
