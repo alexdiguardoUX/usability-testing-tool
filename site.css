@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap');
 
+
 body {
     margin: 0;
-    color: #181818;
+    background: url(images/background.png) no-repeat;
+    background-size: cover;
     background-color: #f6f7f9;
     font-family:  'Open Sans', Arial, Helvetica;
+}
+
+#splash-screen body {
+    color: #181818;
+    background: #f6f7f9;
 }
 
 header {
@@ -154,12 +161,6 @@ p {
 }
 
 @media (max-width:1400px) {.preview {min-width: 70vw;}}
-
-/* STEPS */
-#step1 body, #step2 body, #step3 body, #step4 body, #completion body, #intro body {
-    background: url(images/background.png) no-repeat;
-    background-size: cover;
-}
 
 
 .dialog-box {
@@ -430,4 +431,10 @@ footer h1 {
     font-size: 12px;
     width: 80%;
     margin: 25px auto;
+}
+
+
+.dark-mode {
+    display: block;
+    margin: 0 auto;
 }
