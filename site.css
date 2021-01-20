@@ -358,6 +358,10 @@ div.clickEffect{
     }
 }
 
+#prototype-img .clickEffect {
+    border-color: red;
+}
+
 .click-tooltip, .wish-tooltip {
     display: none;
     width: 150px;
@@ -433,9 +437,26 @@ footer h1 {
     margin: 25px auto;
 }
 
-
 .dark-mode {
     display: block;
     margin: 0 auto;
     border-radius: 20px;
+}
+
+#image-prototype iframe {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 1000px;
+    border: none;
+}
+
+#prototype-img body {
+    background: none;
+}
+
+#prototype-img img {
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
 }
