@@ -21,7 +21,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
-    <div class="dialog-box">
+    <div class="dialog-box fixed-box">
         <div class="dialog-content">
             <p>Is there anything on this page you don't understand or would change to make it better?<br>
                 <strong>Type your detailed answer below and click "Next".</strong>
@@ -32,20 +32,8 @@
             </form>
         </div>   
     </div>
-    <script>
-        var sticky = document.querySelector('.dialog-box');
-        var origOffsetY = sticky.offsetTop;
-        
-        function onScroll(e) {
-          window.scrollY > origOffsetY ? sticky.classList.add('fixed-box') :
-                                          sticky.classList.remove('fixed-box');
-        }
-        
-        document.addEventListener('scroll', onScroll);
-    </script>
     <img class="img-textbox-img" src="images/step1.png">
     <div class="progress-bar progress-bar--25">
         <span class="progress-bar-text">Progress...</span>
     </div>
-      
 </html>
