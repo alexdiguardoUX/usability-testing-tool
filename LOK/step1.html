@@ -21,6 +21,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
+    <span class="device-notice">Not available on mobile.<br>
+        Please try it on bigger screens!
+    </span>
     <div class="dialog-box">
         <div class="dialog-content">
             <h2 style="text-align: center;">Welcome! Please answer the following questions and at the end you will be rewarded with free drum samples!</h2>
@@ -171,10 +174,23 @@
     <div class="progress-bar progress-bar--0">
         <span class="progress-bar-text">Progress...</span>
     </div>
+
+    <!-- Survey completed -->
+    <!-- <div class="dialog-box">
+        <div class="dialog-content">
+            <p><strong>Thank you for your interest!<br>
+                The survey is now closed.</strong>
+            </p>    
+            <p><strong>For drum samples and more visit:</strong><br>
+                <a href="https://lightsoutkill.altervista.org" target="_blank">Lights Out Kill Productions</a>
+            </p>    
+    </div> -->
+
 </html>
 
 <!-- Overrides -->
 <style>
+    @media (max-width: 700px) {.dialog-box {display: none}}
     .dialog-box h2 {
         font-size: 20px;
         margin: 30px;
