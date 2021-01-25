@@ -183,7 +183,7 @@ p {
     text-align: center;
 }
 
-.first-click-img, .img-textbox-img {
+.first-click-img, .screenshot {
     display: block;
     margin: 0 auto;
     width: 80%;
@@ -475,4 +475,18 @@ iframe.dark-mode {
 .radio-buttons--vertical label[for="other"] {
     display: block;
     margin: 10px auto;
+}
+
+.collapse-expand {
+    font-size: 12px;
+    margin: 5px;
+}
+
+#collapse, #expand {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#collapse:hover, #expand:hover {
+    color: blue;
 }

@@ -18,7 +18,16 @@
         <meta name="Description" content="Usability Testing Tool"/>
         <meta name="keywords" content="Usability, UX design, ux research" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script type="text/javascript" src="scripts.js"></script>
+        <script>
+            function clickEffect(e){
+                var d=document.createElement("div");
+                d.className="clickEffect";
+                d.style.top=e.clientY+"px";d.style.left=e.clientX+"px";
+                document.body.appendChild(d);
+                d.addEventListener('animationend',function(){d.parentElement.removeChild(d);}.bind(this));
+            }
+            document.addEventListener('click',clickEffect);
+        </script>
     </head>
 
     <div class="dialog-box">

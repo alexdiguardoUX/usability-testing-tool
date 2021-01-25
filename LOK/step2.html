@@ -1,4 +1,4 @@
-<html id="img-checkboxes">
+<html id="img-radios">
     <head>
         <!-- Hotjar Tracking Code for https://alexdiguardoux.github.io/usability-testing-tool/ -->
         <script>
@@ -19,56 +19,50 @@
         <meta name="Description" content="Usability Testing Tool"/>
         <meta name="keywords" content="Usability, UX design, ux research" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        
     </head>
 
     <div class="dialog-box fixed-box">
         <div class="dialog-content">
-            <p>Clicking on the thumbnails or buttons will take you to the product page.<br>
-                <strong>What text would you use for the button?</strong>
-            </p>
-            <!-- <div class="check-boxes">
-                <input type="checkbox" id="button1" name="button1" value="buy-now">
-                <label for="button1"> Buy Now</label><br>
-                <input type="checkbox" id="button2" name="button2" value="see-details">
-                <label for="button2"> See Details</label><br>
-                <input type="checkbox" id="button3" name="button3" value="preview">
-                <label for="button3"> Preview</label><br>
-                <input type="checkbox" id="button4" name="button4" value="view-more">
-                <label for="button4"> View More</label><br>
-                <input type="checkbox" id="button5" name="button5" value="remove-button">
-                <label for="button4"> Remove Button</label><br>
-                <label for="other">Other:</label>
-                <input type="text" id="other" name="other">
-            </div> -->
-            <div class="radio-buttons--vertical">
-                <input type="radio" id="button1" name="button" value="buy-now">
-                <label for="button1"> Buy Now</label><br>
-                <input type="radio" id="button2" name="button" value="see-details">
-                <label for="button2"> See Details</label><br>
-                <input type="radio" id="button3" name="button" value="preview">
-                <label for="button3"> Preview</label><br>
-                <input type="radio" id="button4" name="button" value="view-more">
-                <label for="button4"> View More</label><br>
-                <input type="radio" id="button5" name="button" value="remove-button">
-                <label for="button4"> Remove Button</label><br>
-                <label for="other">Other:</label>
-                <input type="text" id="other" name="other">
+            <div class="collapse-expand">
+                <span id="collapse">Collapse</span>/<span id="expand">Expand</span>
             </div>
-            <form action="step3.html">
-                <input class="btn-primary" type="submit" value="Next" />
-            </form>
+            <div id="content-wrap">
+                <p>Clicking on the thumbnails or buttons will take you to the product page.<br>
+                    <strong>What text would you use for the button?</strong>
+                </p>
+                <div class="radio-buttons--vertical">
+                    <input type="radio" id="button1" name="button" value="buy-now">
+                    <label for="button1"> Buy Now</label><br>
+                    <input type="radio" id="button2" name="button" value="see-details">
+                    <label for="button2"> See Details</label><br>
+                    <input type="radio" id="button3" name="button" value="preview">
+                    <label for="button3"> Preview</label><br>
+                    <input type="radio" id="button4" name="button" value="view-more">
+                    <label for="button4"> View More</label><br>
+                    <input type="radio" id="button5" name="button" value="remove-button">
+                    <label for="button4"> Remove Button</label><br>
+                    <label for="other">Other:</label>
+                    <input type="text" id="other" name="other">
+                </div>
+                <form action="step3.html">
+                    <input class="btn-primary" type="submit" value="Next" />
+                </form>
+            </div>    
         </div>   
     </div>
-    <img class="img-textbox-img" src="images/drum-samples.png">
+    <img class="screenshot" src="images/drum-samples.png">
     <div class="progress-bar progress-bar--25">
         <span class="progress-bar-text">Progress...</span>
     </div>
 </html>
 
+<script type="text/javascript" src="../scripts.js"></script>
+
 <!-- Overrides -->
 <style>
     img {
-        border-radius: 0 0 20px 20px;
+        width: 100% !important;
     }
 
     .btn-primary {

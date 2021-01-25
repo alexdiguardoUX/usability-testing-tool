@@ -23,48 +23,55 @@
 
     <div class="dialog-box fixed-box">
         <div class="dialog-content">
-            <p>This is the product page.<br>
-                <strong>How trustworthy does it feel to you from 1 to 5?</strong>
-            </p>
-            <div class="score">
-                <div>
-                    <input type="radio" id="score1" name="score" value="1">
-                    <span>1</span>
-                </div>
-                <div>
-                    <input type="radio" id="score2" name="score" value="2">
-                    <span>2</span>
-                </div>
-                <div>
-                    <input type="radio" id="score3" name="score" value="3">
-                    <span>3</span>
-                </div>
-                <div>
-                    <input type="radio" id="score4" name="score" value="4">
-                    <span>4</span>
-                </div>
-                <div>
-                    <input type="radio" id="score5" name="score" value="5">
-                    <span>5</span>
-                </div>  
+            <div class="collapse-expand">
+                <span id="collapse">Collapse</span>/<span id="expand">Expand</span>
             </div>
-            <p><strong>What would you change it to make it better?<br></strong></p>
-            <textarea placeholder="" class="text-box fdata-hj-allow" name="text-box" rows="8" cols="60"></textarea>
-            <form action="completion.html">
-                <input class="btn-primary" type="submit" value="Next" />
-            </form>
+            <div id="content-wrap">
+                <p>This is the product page.<br>
+                    <strong>How trustworthy does it feel to you from 1 to 5?</strong>
+                </p>
+                <div class="score">
+                    <div>
+                        <input type="radio" id="score1" name="score" value="1">
+                        <span>1</span>
+                    </div>
+                    <div>
+                        <input type="radio" id="score2" name="score" value="2">
+                        <span>2</span>
+                    </div>
+                    <div>
+                        <input type="radio" id="score3" name="score" value="3">
+                        <span>3</span>
+                    </div>
+                    <div>
+                        <input type="radio" id="score4" name="score" value="4">
+                        <span>4</span>
+                    </div>
+                    <div>
+                        <input type="radio" id="score5" name="score" value="5">
+                        <span>5</span>
+                    </div>  
+                </div>
+                <p><strong>What would you change it to make it better?<br></strong></p>
+                <textarea placeholder="" class="text-box fdata-hj-allow" name="text-box" rows="8" cols="60"></textarea>
+                <form action="completion.html">
+                    <input class="btn-primary" type="submit" value="Next" />
+                </form>
+            </div>    
         </div>   
     </div>
-    <img class="img-textbox-img" src="images/product-page.png">
+    <img class="screenshot" src="images/product-page.png">
     <div class="progress-bar progress-bar--75">
         <span class="progress-bar-text">Progress...</span>
     </div>
 </html>
 
+<script type="text/javascript" src="../scripts.js"></script>
+
 <!-- Overrides -->
 <style>
     img {
-        border-radius: 0 0 20px 20px;
+        width: 100% !important;
     }
 
     .score div {
