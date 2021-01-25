@@ -183,10 +183,15 @@ p {
     text-align: center;
 }
 
-.first-click-img, .screenshot {
+.screenshot-macbook {
     display: block;
-    margin: 0 auto;
-    width: 80%;
+    margin: 30px auto 90px;
+    width: 85vw;
+}
+
+.screenshot {
+    width: 100%;
+    margin-bottom: 40px;
 }
 
 .text-box {
@@ -324,8 +329,8 @@ p {
     background-color: #0dac00;
 }
 
-#completion .progress-bar, #completion  .progress-bar--0 {
-    margin: 50vh auto 30px;
+#completion .progress-bar {
+    margin: 50vh auto 0;
 }
 
 div.clickEffect{
@@ -447,6 +452,7 @@ iframe.dark-mode {
     position: fixed;
     padding: 10px;
     max-width: 370px;
+    margin-top: -27px;
 }
 
 .fixed-box .dialog-content {
