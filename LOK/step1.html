@@ -1,4 +1,4 @@
-<html id="rating">
+<html id="img-radios">
     <head>
         <!-- Hotjar Tracking Code for https://alexdiguardoux.github.io/usability-testing-tool/ -->
         <script>
@@ -11,7 +11,7 @@
                 a.appendChild(r);
             })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
         </script>
-        
+
         <link rel="stylesheet" type="text/css" href="../site.css">
         <link rel="icon" href="https://alexdiguardoux.github.io/portfolio/images/favicon.png"/>
         <title>Usability Testing Tool</title>
@@ -19,194 +19,56 @@
         <meta name="Description" content="Usability Testing Tool"/>
         <meta name="keywords" content="Usability, UX design, ux research" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        
     </head>
 
-    <span class="device-notice">Not available on mobile.<br>
-        Please try it on bigger screens!
-    </span>
-    <div class="dialog-box">
+    <div class="dialog-box fixed-box">
         <div class="dialog-content">
-            <h2 style="text-align: center;">Welcome! Please take part of the following activities and at the end you will be rewarded with a freebie!</h2>
-            <p><strong>What do you search the most on the internet?<br></strong>(1 least searched - 5 most searched)</p>
-            <div class="vsts rating-section">
-                <h4 style="text-align: center;">VSTs</h4>
-                <div class="score">
-                    <div>
-                        <input type="radio" id="score1" name="VSTs" value="1">
-                        <span>1</span>
-                    </div>
-                    <div>
-                        <input type="radio" id="score2" name="VSTs" value="2">
-                        <span>2</span>
-                    </div>
-                    <div>
-                        <input type="radio" id="score3" name="VSTs" value="3">
-                        <span>3</span>
-                    </div>
-                    <div>
-                        <input type="radio" id="score4" name="VSTs" value="4">
-                        <span>4</span>
-                    </div>
-                    <div>
-                        <input type="radio" id="score5" name="VSTs" value="5">
-                        <span>5</span>
-                    </div>  
-                </div>
+            <div class="collapse-expand">
+                <span id="collapse">Collapse</span>/<span id="expand">Expand</span>
             </div>
-            <div class="drum-samples rating-section">
-                <h4 style="text-align: center;">Drum Samples</h4>
-                <div class="score">
-                    <div>
-                        <input type="radio" id="score1" name="drum-samples" value="1">
-                        <span>1</span>
-                    </div>
-                    <div>
-                        <input type="radio" id="score2" name="drum-samples" value="2">
-                        <span>2</span>
-                    </div>
-                    <div>
-                        <input type="radio" id="score3" name="drum-samples" value="3">
-                        <span>3</span>
-                    </div>
-                    <div>
-                        <input type="radio" id="score4" name="drum-samples" value="4">
-                        <span>4</span>
-                    </div>
-                    <div>
-                        <input type="radio" id="score5" name="drum-samples" value="5">
-                        <span>5</span>
-                    </div>  
+            <div id="content-wrap">
+                <h2>Welcome! Please take part of the following activities and at the end you will be rewarded with a freebie!</h2>
+                <p>Clicking on the thumbnails or buttons will take you to the product page.<br>
+                    <strong>What text would you use for the button?</strong>
+                </p>
+                <div class="radio-buttons--vertical">
+                    <input type="radio" id="button1" name="button" value="buy-now">
+                    <label for="button1"> Buy Now</label><br>
+                    <input type="radio" id="button2" name="button" value="see-details">
+                    <label for="button2"> See Details</label><br>
+                    <input type="radio" id="button3" name="button" value="preview">
+                    <label for="button3"> Preview</label><br>
+                    <input type="radio" id="button4" name="button" value="view-more">
+                    <label for="button4"> View More</label><br>
+                    <input type="radio" id="button5" name="button" value="remove-button">
+                    <label for="button4"> Remove Button</label><br>
+                    <label for="other">Other:</label>
+                    <input type="text" class="fdata-hj-allow" id="other" name="other">
                 </div>
-            </div>
-            <div class="guitar-tones rating-section">
-                <h4 style="text-align: center;">Guitar Tones</h4>
-                <div class="score">
-                    <div>
-                        <input type="radio" id="score1" name="guitar-tones" value="1">
-                        <span>1</span>
-                    </div>
-                    <div>
-                        <input type="radio" id="score2" name="guitar-tones" value="2">
-                        <span>2</span>
-                    </div>
-                    <div>
-                        <input type="radio" id="score3" name="guitar-tones" value="3">
-                        <span>3</span>
-                    </div>
-                    <div>
-                        <input type="radio" id="score4" name="guitar-tones" value="4">
-                        <span>4</span>
-                    </div>
-                    <div>
-                        <input type="radio" id="score5" name="guitar-tones" value="5">
-                        <span>5</span>
-                    </div>  
-                </div>
-            </div>
-            <div class="daw-templates rating-section">
-                <h4 style="text-align: center;">DAWs Templates</h4>
-                <div class="score">
-                    <div>
-                        <input type="radio" id="score1" name="daw-templates" value="1">
-                        <span>1</span>
-                    </div>
-                    <div>
-                        <input type="radio" id="score2" name="daw-templates" value="2">
-                        <span>2</span>
-                    </div>
-                    <div>
-                        <input type="radio" id="score3" name="daw-templates" value="3">
-                        <span>3</span>
-                    </div>
-                    <div>
-                        <input type="radio" id="score4" name="daw-templates" value="4">
-                        <span>4</span>
-                    </div>
-                    <div>
-                        <input type="radio" id="score5" name="daw-templates" value="5">
-                        <span>5</span>
-                    </div>  
-                </div>
-            </div>
-            <div class="tutorials rating-section">
-                <h4 style="text-align: center;">Tutorials</h4>
-                <div class="score">
-                    <div>
-                        <input type="radio" id="score1" name="tutorials" value="1">
-                        <span>1</span>
-                    </div>
-                    <div>
-                        <input type="radio" id="score2" name="tutorials" value="2">
-                        <span>2</span>
-                    </div>
-                    <div>
-                        <input type="radio" id="score3" name="tutorials" value="3">
-                        <span>3</span>
-                    </div>
-                    <div>
-                        <input type="radio" id="score4" name="tutorials" value="4">
-                        <span>4</span>
-                    </div>
-                    <div>
-                        <input type="radio" id="score5" name="tutorials" value="5">
-                        <span>5</span>
-                    </div>  
-                </div>
-            </div>
-            <p><strong>Anything else you search for music production?</strong></p>
-            <textarea placeholder="" class="text-box fdata-hj-allow" name="text-box" rows="8" cols="60"></textarea>
-            <p><strong>Do you use Paypal as safe payment method over the internet?</strong></p>
-            <div class="boolean">
-                <div>
-                    <input type="radio" id="yes" name="boolean" value="yes">
-                    <span>Yes</span>
-                </div>
-                <div>
-                    <input type="radio" id="no" name="boolean" value="no">
-                    <span>No</span>
-                </div>
-            </div>
-            <form action="step2.html">
-                <input class="btn-primary" type="submit" value="Next"/>
-            </form>    
+                <form action="step2.html">
+                    <input class="btn-primary" type="submit" value="Next" />
+                </form>
+            </div>    
         </div>   
     </div>
+    <img class="screenshot" src="images/drum-samples.png">
     <div class="progress-bar progress-bar--0">
         <span class="progress-bar-text">Progress...</span>
     </div>
-
-    <!-- Survey completed -->
-    <!-- <div class="dialog-box">
-        <div class="dialog-content">
-            <p><strong>Thank you for your interest!<br>
-                The survey is now closed.</strong>
-            </p>    
-            <p><strong>For drum samples and more visit:</strong><br>
-                <a href="https://lightsoutkill.altervista.org" target="_blank">Lights Out Kill Productions</a>
-            </p>    
-    </div> -->
-
 </html>
+
+<script type="text/javascript" src="../scripts.js"></script>
 
 <!-- Overrides -->
 <style>
-    @media (max-width: 700px) {.dialog-box {display: none}}
-    .dialog-box h2 {
-        font-size: 20px;
-        margin: 30px;
-    }
-
-    .rating-section {
-        margin: 40px auto;
-        border-bottom: 1px solid #e6e6e6;
-    }
-
-    .score div {
-        padding: 10px 45px 35px;
-    }
-
     .btn-primary {
         margin: 20px auto;
     }
 
+    h2 {
+        font-size: 16px;
+        line-height: 180%;
+        margin: 25px 40px;
+    }
 </style>
