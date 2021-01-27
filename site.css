@@ -496,3 +496,8 @@ iframe.dark-mode {
 #collapse:hover, #expand:hover {
     color: blue;
 }
+
+input[type="text"] {
+    border: 1px solid #c5c5c5;
+    padding: 5px;
+}

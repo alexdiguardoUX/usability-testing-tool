@@ -25,14 +25,60 @@
         <div class="dialog-content">
             <p><strong>Thank you for your time!</strong><br>
                 Your input will help us improve the design.<br>
-                <a href="https://www.dropbox.com/s/ijrn1d3zrwek1gr/post-hardcore%20by%20Alex%20Di%20Guardo.ngrr?dl=0" target="_blank">Download your free Guitar Rig tone!</a>
+                <strong><a href="https://www.dropbox.com/s/ijrn1d3zrwek1gr/post-hardcore%20by%20Alex%20Di%20Guardo.ngrr?dl=0" target="_blank">Download your free Guitar Rig tone!</a></strong>
             </p>    
-            <p><strong>For more, visit:</strong><br>
-                <a href="https://lightsoutkill.altervista.org" target="_blank">Lights Out Kill Productions</a>
-            </p>    
+            <p><strong>Or take a look <a href="https://lightsoutkill.altervista.org" target="_blank">here</a> to choose a product of your choice that I will send you via email FOR FREE.</strong></p>  
+            <form>
+                <div class="email-product">
+                    <label for="email">Email address:</label>
+                    <input type="text" class="fdata-hj-allow" id="email" name="email">
+                    <label for="product">Product you like:</label>
+                    <input type="text" class="fdata-hj-allow" id="product" name="product">
+                </div>
+            </form>        
+            <div class="button-sent">
+                <button class="btn-primary" id="free-button">Send me free stuff!</button>
+                <span id="thankyou-msg"><strong>Thanks! I will send you the freebie shortly.</strong></span>
+            </div>  
     </div>
     <div class="progress-bar progress-bar--100">
         <span class="progress-bar-text">Completed!</span>
     </div>
-      
 </html>
+
+<script>
+    var button = document.getElementById("free-button");
+    var message = document.getElementById("thankyou-msg");
+
+    button.addEventListener("click", function() {
+    message.style.display = "block";
+    });
+</script>
+
+<!-- Overrides -->
+<style>
+    label {
+        display: block;
+        font-size: 14px;
+        margin: 3px 175px;
+        text-align: left;
+    }
+
+    input[type="text"] {
+        margin-bottom: 16px;
+        width: 300px;
+    }
+
+    .email-product {
+        text-align: center;
+    }
+
+    .btn-primary {margin-bottom: 30px;}
+
+    .button-sent span {
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+        display: none;
+    }
+</style>
