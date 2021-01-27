@@ -112,6 +112,8 @@ p {
         background-color: #ffdb9a;
         padding: 17px;
         border-left: 6px solid #ffba3b;
+        font-weight: bold;
+        color: #5f1b00;
     }
 }
 

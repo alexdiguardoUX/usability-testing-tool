@@ -21,7 +21,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
     </head>
-
+    <span class="device-notice">Not available on mobile.<br>
+        Please try it on bigger screens!
+    </span>
     <div class="dialog-box fixed-box">
         <div class="dialog-content">
             <div class="collapse-expand">
@@ -62,13 +64,20 @@
 
 <!-- Overrides -->
 <style>
-    .btn-primary {
-        margin: 20px auto;
-    }
 
-    h2 {
-        font-size: 16px;
-        line-height: 180%;
-        margin: 25px 40px;
+@media (max-width: 700px) {
+    .dialog-box, .screenshot {
+        display: none;
+    } 
+}
+
+.btn-primary {
+    margin: 20px auto;
+}
+
+h2 {
+    font-size: 16px;
+    line-height: 180%;
+    margin: 25px 40px;
     }
 </style>
