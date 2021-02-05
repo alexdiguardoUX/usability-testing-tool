@@ -1,0 +1,75 @@
+<html id="img-radios">
+    <head>
+        <!-- Hotjar Tracking Code for https://alexdiguardoux.github.io/usability-testing-tool/ -->
+        <script>
+            (function(h,o,t,j,a,r){
+                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                h._hjSettings={hjid:2195594,hjsv:6};
+                a=o.getElementsByTagName('head')[0];
+                r=o.createElement('script');r.async=1;
+                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+        </script>
+
+        <link rel="stylesheet" type="text/css" href="../../site.css">
+        <link rel="icon" href="https://alexdiguardoux.github.io/portfolio/images/favicon.png"/>
+        <title>Usability Testing Tool</title>
+        <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+        <meta name="Description" content="Usability Testing Tool"/>
+        <meta name="keywords" content="Usability, UX design, ux research" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    </head>
+    <span class="device-notice">Not available on mobile.<br>
+        Please try it on bigger screens!
+    </span>
+    <div class="dialog-box fixed-box">
+        <div class="dialog-content">
+            <div class="collapse-expand">
+                <span id="collapse">Collapse</span>/<span id="expand">Expand</span>
+            </div>
+            <div id="content-wrap">
+                <h2>Welcome and thank you for taking the time to leave a feedback!</h2>
+                <p>Imagine you are looking around on this music production website.<br>
+                    <strong>How would you prefer the product pages to open?</strong>
+                </p>
+                <form action="step2.html">
+                    <div class="radio-buttons--vertical">
+                        <input type="radio" id="button1" name="button" value="same-tab" required>
+                        <label for="button1"> Open in the same tab</label><br>
+                        <input type="radio" id="button2" name="button" value="new-tab" required>
+                        <label for="button2"> Open in a new tab</label><br>
+                    </div>
+                    <input class="btn-primary" type="submit" value="Next" />
+                </form>
+            </div>    
+        </div>   
+    </div>
+    <img class="screenshot" src="home.png">
+    <div class="progress-bar progress-bar--0">
+        <span class="progress-bar-text">Progress...</span>
+    </div>
+</html>
+
+<script type="text/javascript" src="../../scripts.js"></script>
+
+<!-- Overrides -->
+<style>
+
+@media (max-width: 700px) {
+    .dialog-box, .screenshot {
+        display: none;
+    } 
+}
+
+.btn-primary {
+    margin: 20px auto;
+}
+
+h2 {
+    font-size: 16px;
+    line-height: 180%;
+    margin: 25px 40px;
+    }
+</style>

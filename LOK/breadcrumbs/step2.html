@@ -1,0 +1,90 @@
+<html id="ab-comparison">
+    <head>
+        <!-- Hotjar Tracking Code for https://alexdiguardoux.github.io/usability-testing-tool/ -->
+        <script>
+            (function(h,o,t,j,a,r){
+                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                h._hjSettings={hjid:2195594,hjsv:6};
+                a=o.getElementsByTagName('head')[0];
+                r=o.createElement('script');r.async=1;
+                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+        </script>
+
+        <link rel="stylesheet" type="text/css" href="../../site.css">
+        <link rel="icon" href="https://alexdiguardoux.github.io/portfolio/images/favicon.png"/>
+        <title>Usability Testing Tool</title>
+        <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+        <meta name="Description" content="Usability Testing Tool"/>
+        <meta name="keywords" content="Usability, UX design, ux research" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <div class="dialog-box">
+        <div class="dialog-content">
+            <p>If you'd like to stay in the same tab, which of these 2 versions would you prefer?<br>
+                <ul>
+                    <li>A. Just the logo that takes you back to the home page</li>
+                    <li>B. Logo and navigation links</li>
+                </ul>
+                <strong>Select one image and click “Next”.</strong>
+            </p>
+            <form action="completion.html">
+                <input class="btn-primary" type="submit" value="Next" />
+            </form>
+        </div>   
+    </div>
+    <div class="center-box">
+        <div class="versions">
+            <div class="version-a" id="version-a">
+                <a href="#"><img id="version-a-img" src="no-breadcrumbs.png"></a>
+            </div>
+            <div class="version-b" id="version-b">
+                <a href="#"><img id="version-b-img" src="with-breadcrumbs.png"></a>
+            </div>
+        </div>
+    </div>
+    <script>
+        var versionA = document.getElementById("version-a");
+        var versionAImg = document.getElementById("version-a-img");
+        versionA.addEventListener("click", function() {
+        versionAImg.style.cssText = "filter: drop-shadow(0 0 20px #FFF);";
+        });
+
+        var versionB = document.getElementById("version-b");
+        var versionBImg = document.getElementById("version-b-img");
+        versionB.addEventListener("click", function() {
+        versionBImg.style.cssText = "filter: drop-shadow(0 0 20px #FFF);";
+        });
+    </script>
+    <div class="progress-bar progress-bar--50">
+        <span class="progress-bar-text">Progress...</span>
+    </div>
+      
+</html>
+
+
+<!-- Overrides -->
+<style>
+    .version-b img {
+        max-height: inherit;
+    }
+
+    .versions img {
+        max-width: 650px;
+        margin: 40px;
+        border-radius: 20px;
+        padding: 0;
+    }
+
+    .dialog-content {
+        text-align: center;
+    }
+
+    .dialog-content li {
+        text-align: left;
+        list-style-type: none;
+        line-height: 200%;
+    }
+</style>
