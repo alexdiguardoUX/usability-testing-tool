@@ -455,6 +455,7 @@ iframe.dark-mode {
     padding: 10px;
     max-width: 430px;
     top: 4px;
+    z-index: 5;
 }
 
 .fixed-box .dialog-content {

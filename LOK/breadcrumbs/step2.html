@@ -21,27 +21,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
-    <div class="dialog-box">
+    <div class="dialog-box fixed-box">
         <div class="dialog-content">
-            <p>If you'd like to stay in the same tab, which of these 2 versions would you prefer?<br>
-                <ul>
-                    <li>A. Just the logo that takes you back to the home page</li>
-                    <li>B. Logo and navigation links</li>
-                </ul>
-                <strong>Select one image and click “Next”.</strong>
-            </p>
-            <form action="completion.html">
-                <input class="btn-primary" type="submit" value="Next" />
-            </form>
+            <div class="collapse-expand">
+                <span id="collapse">Collapse</span>/<span id="expand">Expand</span>
+            </div>
+            <div id="content-wrap">
+                <p>If you'd like to stay in the same tab, which of these 2 versions would you prefer?<br>
+                    <ul>
+                        <li>A. Just the logo that takes you back to the home page</li>
+                        <li>B. Logo and navigation links</li>
+                    </ul>
+                    <strong>Select one image.</strong>
+                </p>
+                <!-- <form action="completion.html">
+                    <input class="btn-primary" type="submit" value="Next" />
+                </form> -->
+            </div>
         </div>   
     </div>
     <div class="center-box">
         <div class="versions">
             <div class="version-a" id="version-a">
-                <a href="#"><img id="version-a-img" src="no-breadcrumbs.png"></a>
+                <a href="completion.html"><img id="version-a-img" src="no-breadcrumbs.png"></a>
             </div>
             <div class="version-b" id="version-b">
-                <a href="#"><img id="version-b-img" src="with-breadcrumbs.png"></a>
+                <a href="completion.html"><img id="version-b-img" src="with-breadcrumbs.png"></a>
             </div>
         </div>
     </div>
@@ -64,6 +69,7 @@
       
 </html>
 
+<script type="text/javascript" src="../../scripts.js"></script>
 
 <!-- Overrides -->
 <style>
@@ -78,13 +84,13 @@
         padding: 0;
     }
 
-    .dialog-content {
-        text-align: center;
-    }
-
     .dialog-content li {
         text-align: left;
         list-style-type: none;
         line-height: 200%;
+    }
+
+    #content-wrap strong {
+        margin: 16px 40px;
     }
 </style>
