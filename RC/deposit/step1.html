@@ -20,7 +20,9 @@
         <meta name="keywords" content="Usability, UX design, ux research" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-
+    <span class="device-notice">Not available on mobile.<br>
+        Please try it on bigger screens!
+    </span>
     <div class="dialog-box fixed-box">
         <div class="dialog-content">
             <div class="collapse-expand">
@@ -56,9 +58,15 @@
 <style>
 
     .screenshot {
-        width: 1000px;
+        max-width: 1000px;
         display: block;
         margin: 16px auto;
         border-radius: 10px;
     }
+
+    @media (max-width: 700px) {
+    .dialog-box, .screenshot {
+        display: none;
+    } 
+}
 </style>
