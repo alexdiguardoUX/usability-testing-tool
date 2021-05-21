@@ -504,3 +504,9 @@ input[type="text"] {
     border: 1px solid #c5c5c5;
     padding: 5px;
 }
+
+@media (max-height: 670px) {
+    .fixed-box {
+        max-width:630px;
+    } 
+}    
