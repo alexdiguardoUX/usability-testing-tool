@@ -34,8 +34,29 @@
                         <p>Often, the main driver will be asked to leave a security deposit when collecting the car using a credit card.<br>
                         </p>
                         <form action="completion.html">
-                            <p><strong>How would you feel about having a tooltip that informs you if the card used to pay for the car is also valid for the security deposit? (see examples in the image)<br></strong></p>
-                            <textarea placeholder="" class="text-box fdata-hj-allow" name="text-box" rows="8" cols="60" required></textarea>
+                            <p><strong>On a scale of 1 to 5, how helpful would you say it would be having a tooltip informing you if the card used to pay for the car is also valid for the security deposit? (see examples in the image)<br></strong></p>
+                            <div class="score">
+                                <div>
+                                    <input type="radio" id="score1" name="score" value="1" required>
+                                    <span>1</span>
+                                </div>
+                                <div>
+                                    <input type="radio" id="score2" name="score" value="2" required>
+                                    <span>2</span>
+                                </div>
+                                <div>
+                                    <input type="radio" id="score3" name="score" value="3" required>
+                                    <span>3</span>
+                                </div>
+                                <div>
+                                    <input type="radio" id="score4" name="score" value="4" required>
+                                    <span>4</span>
+                                </div>
+                                <div>
+                                    <input type="radio" id="score5" name="score" value="5" required>
+                                    <span>5</span>
+                                </div>  
+                            </div>
                             <input class="btn-primary" type="submit" value="Next" />
                         </form>
                     </div>    
@@ -68,6 +89,10 @@
         padding: 10px;
         max-width: 430px;
         top: 4px;
+    }
+
+    .score div, .boolean div {
+        padding: 25px;
     }
 
     @media (max-width: 700px) {
