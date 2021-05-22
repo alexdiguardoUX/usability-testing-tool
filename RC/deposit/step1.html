@@ -23,23 +23,29 @@
     <span class="device-notice">Not available on mobile.<br>
         Please try it on bigger screens!
     </span>
-    <div class="dialog-box fixed-box">
-        <div class="dialog-content">
-            <div class="collapse-expand">
-                <span id="collapse">Collapse</span>/<span id="expand">Expand</span>
+    <div class="content-wrap">
+        <div class="left">
+            <div class="dialog-box fixed-box">
+                <div class="dialog-content">
+                    <!-- <div class="collapse-expand">
+                        <span id="collapse">Collapse</span>/<span id="expand">Expand</span>
+                    </div> -->
+                    <div id="content-wrap">
+                        <p>Often, the main driver will be asked to leave a security deposit when collecting the car using a credit card.<br>
+                        </p>
+                        <form action="completion.html">
+                            <p><strong>How would you feel about having a tooltip that informs you if the card used to pay for the car is also valid for the security deposit? (see examples in the image)<br></strong></p>
+                            <textarea placeholder="" class="text-box fdata-hj-allow" name="text-box" rows="8" cols="60" required></textarea>
+                            <input class="btn-primary" type="submit" value="Next" />
+                        </form>
+                    </div>    
+                </div>   
             </div>
-            <div id="content-wrap">
-                <p>Often, the main driver will be asked to leave a security deposit when collecting the car using a credit card.<br>
-                </p>
-                <form action="completion.html">
-                    <p><strong>How do you feel about having a tooltip that informs you if the card used to pay for the car is also valid for the security deposit?<br></strong></p>
-                    <textarea placeholder="" class="text-box fdata-hj-allow" name="text-box" rows="8" cols="60" required></textarea>
-                    <input class="btn-primary" type="submit" value="Next" />
-                </form>
-            </div>    
-        </div>   
-    </div>
-    <img class="screenshot" src="images/mockup.png">
+        </div> 
+        <div class="right">   
+            <img class="screenshot" src="images/mockup.png">
+        </div>    
+    </div>    
     <div class="progress-bar progress-bar--75">
         <span class="progress-bar-text">Progress...</span>
     </div>
@@ -55,6 +61,13 @@
         display: block;
         margin: 16px auto;
         border-radius: 10px;
+    }
+
+    .fixed-box {
+        position: relative;
+        padding: 10px;
+        max-width: 430px;
+        top: 4px;
     }
 
     @media (max-width: 700px) {

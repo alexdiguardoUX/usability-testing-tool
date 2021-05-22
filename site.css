@@ -449,6 +449,19 @@ iframe.dark-mode {
     display: block;
     margin: 0 auto;
 }
+.content-wrap {
+    display: flex;
+}
+
+.left {
+    display: inline-block;
+}
+
+.right {
+    display: inline-block;
+    /* width: 50vw; */
+    margin: 0 auto;
+}
 
 .fixed-box {
     position: fixed;
@@ -457,6 +470,12 @@ iframe.dark-mode {
     top: 4px;
     z-index: 5;
 }
+
+@media (max-height: 670px) {
+    .fixed-box {
+        max-width:630px;
+    } 
+}    
 
 .fixed-box .dialog-content {
     padding: 5px;
@@ -505,8 +524,3 @@ input[type="text"] {
     padding: 5px;
 }
 
-@media (max-height: 670px) {
-    .fixed-box {
-        max-width:630px;
-    } 
-}    
