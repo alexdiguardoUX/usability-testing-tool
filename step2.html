@@ -11,7 +11,6 @@
                 a.appendChild(r);
             })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
         </script>
-
         <link rel="stylesheet" type="text/css" href="site.css">
         <link rel="icon" href="https://alexdiguardoux.github.io/portfolio/images/favicon.png"/>
         <title>Usability Testing Tool</title>
@@ -20,27 +19,26 @@
         <meta name="keywords" content="Usability, UX design, ux research" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-
-    <div class="dialog-box fixed-box">
-        <div class="dialog-content">
-            <div class="collapse-expand">
-                <span id="collapse">Collapse</span>/<span id="expand">Expand</span>
+    <span class="device-notice">Not available on smaller screens.<br>
+        Please try it on laptop or desktop computers.
+    </span>
+    <div class="content-wrap">
+        <div class="left">
+            <div class="dialog-box">
+                <div class="dialog-content">
+                    <div class="progress-bar progress-bar--50"></div>
+                    <p>Is there anything on this page you don't understand or would change to make it better?<br>
+                        <strong>Type your detailed answer below and click "Next".</strong>
+                    </p>
+                    <form action="step3.html">
+                        <textarea placeholder="" class="text-box fdata-hj-allow" name="text-box" rows="8" cols="50" required></textarea>
+                        <input class="btn-primary" type="submit" value="Next" />
+                    </form>
+                </div>   
             </div>
-            <div id="content-wrap">
-                <p>Is there anything on this page you don't understand or would change to make it better?<br>
-                    <strong>Type your detailed answer below and click "Next".</strong>
-                </p>
-                <textarea placeholder="" class="text-box fdata-hj-allow" name="text-box" rows="8" cols="60"></textarea>
-                <form action="step3.html">
-                    <input class="btn-primary" type="submit" value="Next" />
-                </form>
-            </div>    
-        </div>   
-    </div>
-    <img class="screenshot-macbook" src="images/step1.png">
-    <div class="progress-bar progress-bar--25">
-        <span class="progress-bar-text">Progress...</span>
+        </div>  
+        <div class="right">
+            <img class="screenshot-macbook" id="first-click-img" src="images/step1.png">
+        </div>
     </div>
 </html>
-
-<script type="text/javascript" src="scripts.js"></script>

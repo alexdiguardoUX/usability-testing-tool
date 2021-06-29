@@ -11,7 +11,6 @@
                 a.appendChild(r);
             })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
         </script>
-        
         <link rel="stylesheet" type="text/css" href="site.css">
         <link rel="icon" href="https://alexdiguardoux.github.io/portfolio/images/favicon.png"/>
         <title>Usability Testing Tool</title>
@@ -19,16 +18,24 @@
         <meta name="Description" content="Usability Testing Tool"/>
         <meta name="keywords" content="Usability, UX design, ux research" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script type="text/javascript" src="scripts.js"></script>
     </head>
-
-    <div class="dialog-box fixed-box">
-        <div class="dialog-content">
-            <p><strong>Please switch on the "Dark Mode".</strong></p>
-        </div>   
+    <span class="device-notice">Not available on smaller screens.<br>
+        Please try it on laptop or desktop computers.
+    </span>
+    <div class="content-wrap">
+        <div class="left">
+            <div class="dialog-box">
+                <div class="dialog-content">
+                    <div class="progress-bar progress-bar--75"></div>
+                    <p><strong>Please switch on the "Dark Mode".</strong></p>  
+                </div>   
+            </div>
+        </div>  
+        <div class="right">
+            <img class="prototype-img" src="images/day.png" usemap="#prototype">
+            <map name="prototype">
+                <area alt="" title="" href="step6.html" coords="1180,15,1218,35" shape="rect">
+            </map>
+        </div>
     </div>
-    <img class="prototype-img" src="images/day.png" usemap="#prototype">
-    <map name="prototype">
-        <area alt="" title="" href="step6.html" coords="1180,15,1218,35" shape="rect">
-    </map>
 </html>

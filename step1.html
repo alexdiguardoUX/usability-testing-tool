@@ -29,30 +29,37 @@
             document.addEventListener('click',clickEffect);
         </script>
     </head>
+    <span class="device-notice">Not available on smaller screens.<br>
+        Please try it on laptop or desktop computers.
+    </span>
+    <div class="content-wrap">
+        <div class="left">
+            <div class="dialog-box">
+                <div class="dialog-content">
+                    <div class="progress-bar progress-bar--25"></div>
+                    <h2>Welcome! Please take part of the following activities which will help us improve our design.</h2>
+                    <p>You’re in beautiful New York and would like to visit places nearby.
+                        You land on this website after googling “Places to visit near me”.<br>
+                        <strong>You want to display the nearest locations first, where do you click?</strong>
+                    </p>
+                    <span class="click-tooltip" id="clickTooltip">Thanks!<br>Please proceed.</a></strong><br>
+                        <form action="step2.html">
+                            <input class="btn-primary" type="submit" value="Next" />
+                        </form>
+                    </span>
+                </div>   
+            </div>
+        </div>  
+        <div class="right">
+            <img class="screenshot-macbook" id="first-click-img" src="images/step1.png">
+            <script>
+                var tooltip = document.getElementById("clickTooltip");
+                var screenshot = document.getElementById("first-click-img");
 
-    <div class="dialog-box">
-        <div class="dialog-content">
-            <p>You’re in beautiful New York and would like to visit places nearby.<br>
-                You land on this website after googling “Places to visit near me”. <br>
-                You want to display the nearest locations first, where do you click?<br>
-                <strong>Click on your preferred area and then click “Next”.</strong>
-            </p>
-            <form action="step2.html">
-                <input class="btn-primary" type="submit" value="Next" />
-            </form>
-        </div>   
-    </div>
-    <span class="click-tooltip" id="clickTooltip">Thanks!<br>Please click <strong>"<a href="step2.html">Next</a>"</strong></span>
-    <img class="screenshot-macbook" id="first-click-img" src="images/step1.png">
-    <script>
-        var tooltip = document.getElementById("clickTooltip");
-        var screenshot = document.getElementById("first-click-img");
-
-        screenshot.addEventListener("click", function() {
-        tooltip.style.display = "block";
-        });
-    </script>
-    <div class="progress-bar progress-bar--0">
-        <span class="progress-bar-text">Progress...</span>
+                screenshot.addEventListener("click", function() {
+                tooltip.style.display = "block";
+                });
+            </script>
+        </div>
     </div>
 </html>

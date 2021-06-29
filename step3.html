@@ -11,7 +11,6 @@
                 a.appendChild(r);
             })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
         </script>
-
         <link rel="stylesheet" type="text/css" href="site.css">
         <link rel="icon" href="https://alexdiguardoux.github.io/portfolio/images/favicon.png"/>
         <title>Usability Testing Tool</title>
@@ -20,43 +19,32 @@
         <meta name="keywords" content="Usability, UX design, ux research" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-
-    <div class="dialog-box">
-        <div class="dialog-content">
-            <p>You are presented with these 2 versions.<br>
-                Which one inspires you more trust?<br>
-                <strong>Take your pick and then click “Next”.</strong>
-            </p>
-            <form action="step4.html">
-                <input class="btn-primary" type="submit" value="Next" />
-            </form>
-        </div>   
-    </div>
-    <div class="center-box">
-        <div class="versions">
-            <div class="version-a" id="version-a">
-                <a href="#"><img id="version-a-img" src="images/version-a.png"></a>
+    <span class="device-notice">Not available on smaller screens.<br>
+        Please try it on laptop or desktop computers.
+    </span>
+    <div class="content-wrap">
+        <div class="left">
+            <div class="dialog-box">
+                <div class="dialog-content">
+                    <div class="progress-bar progress-bar--75"></div>
+                    <p>You are presented with these 2 versions.<br>
+                        Which one inspires you more trust?<br><br>
+                        <strong>Click on your preferred image.</strong>
+                    </p>
+                </div>   
             </div>
-            <div class="version-b" id="version-b">
-                <a href="#"><img id="version-b-img" src="images/version-b.png"></a>
+        </div>  
+        <div class="right">
+            <div class="center-box">
+                <div class="versions">
+                    <div class="version-a" id="version-a">
+                        <a href="step4.html"><img id="version-a-img" src="images/version-a.png"></a>
+                    </div>
+                    <div class="version-b" id="version-b">
+                        <a href="step4.html"><img id="version-b-img" src="images/version-b.png"></a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <script>
-        var versionA = document.getElementById("version-a");
-        var versionAImg = document.getElementById("version-a-img");
-        versionA.addEventListener("click", function() {
-        versionAImg.style.cssText = "filter: drop-shadow(0 0 20px #FFF);";
-        });
-
-        var versionB = document.getElementById("version-b");
-        var versionBImg = document.getElementById("version-b-img");
-        versionB.addEventListener("click", function() {
-        versionBImg.style.cssText = "filter: drop-shadow(0 0 20px #FFF);";
-        });
-    </script>
-    <div class="progress-bar progress-bar--50">
-        <span class="progress-bar-text">Progress...</span>
-    </div>
-      
 </html>
