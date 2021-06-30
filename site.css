@@ -74,7 +74,7 @@ h2 {
 
 .dialog-content h2 {
     font-size: 26px;
-    margin: 0 32px 40px;
+    margin: 0 64px 40px;
 }
 
 @media (max-width: 370px) {h1:not(header h1)  {font-size: 23px}}
@@ -186,15 +186,15 @@ p {
 }
 
 .dialog-content p {
-    margin: 0 32px 68px;
+    margin: 0 64px 68px;
     line-height: 180%;
     text-align: left;
 }
 
 .screenshot-macbook {
     display: block;
-    margin: 11vh 2vw;
-    width: 95%;
+    margin: 4vh auto;
+    width: 80%;
 }
 
 .screenshot {
@@ -303,7 +303,7 @@ p {
     height: 10px;
     background-color: rgb(237, 238, 242);
     border-radius: 20px;
-    margin: 50px 3vw 80px;
+    margin: 80px 3vw 80px;
     text-align: center;
 }
 
@@ -460,13 +460,14 @@ iframe.dark-mode {
     min-width: 400px;
     box-shadow: 3px 0px 20px 0px #ffffff42;
     background-color: #fefefe;
-    width: 50%;
+    width: 45%;
 }
 
 .right {
     display: inline-block;
     background: url(images/background.png) no-repeat;
     background-size: cover;
+    width: 100vw;
 }
 
 .fixed-box {
@@ -514,6 +515,11 @@ iframe.dark-mode {
 .collapse-expand {
     font-size: 12px;
     margin: 5px;
+    position: absolute;
+    background-color: #FFF;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 6px 6px 20px 0px #0c93f73d;
 }
 
 #collapse, #expand {
@@ -530,21 +536,8 @@ input[type="text"] {
     padding: 5px;
 }
 
-
-#ab-comparison .left {
-    width: 25%;
-}
-
-#rating .left, #prototype-1 .left, #prototype-2 .left, #completion .left {
+#prototype-1 .left, #prototype-2 .left {
     width: 30%;
-}
-
-#rating .right {
-    width: 70%;
-}
-
-#completion .right {
-    width: 70%;
 }
 
 #rating .dialog-content p {
